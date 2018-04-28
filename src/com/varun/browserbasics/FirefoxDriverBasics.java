@@ -6,8 +6,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class FirefoxDriverBasics {
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.gecko.driver", 
-							"/home/varunu28/Downloads/Softwares/geckodriver");
+		System.setProperty("webdriver.gecko.driver", "/home/varunu28/Downloads/Softwares/geckodriver");
 		
 		WebDriver driver = new FirefoxDriver();
 		
