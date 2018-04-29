@@ -11,9 +11,24 @@ public class ChromeDriverBasics {
 		WebDriver driver = new ChromeDriver();
 		
 		// Invoking a GoogleChrome browser for Google
-		driver.get("http://google.com");
+		driver.get("https://google.co.in/");
 		
 		// Getting title of current page
 		System.out.println(driver.getTitle());
+		
+		// Getting the URL of current page
+		System.out.println(driver.getCurrentUrl());
+		
+		// Getting the page source of current page
+		// System.out.println(driver.getPageSource());
+		
+		driver.get("http://yahoo.com");
+		
+		// Using the navigation function of Selenium
+		driver.navigate().back();
+		driver.navigate().forward(); 
+		
+		driver.close(); // Closes current browser
+		driver.quit(); // Closes all browser started by Selenium
 	}
 }
