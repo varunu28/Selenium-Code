@@ -7,7 +7,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class LocatorSalesforceExample {
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "/home/varunu28/Downloads/Softwares/chromedriver");
+		System.setProperty("webdriver.chrome.driver", 
+							"/home/varunu28/Downloads/Softwares/Selenium/chromedriver");
 		
 		WebDriver driver = new ChromeDriver();
 		
@@ -19,5 +20,10 @@ public class LocatorSalesforceExample {
 		
 		// Passing a text to the element with "pw" name attribute
 		driver.findElement(By.name("pw")).sendKeys("password");
+		
+		// Clicking a login element using Xpath
+		driver.findElement(By.xpath("//*[@id='Login']")).click();
+		
+		driver.close();
 	}
 }
