@@ -24,6 +24,15 @@ public class LocatorSalesforceExample {
 		// Clicking a login element using Xpath
 		driver.findElement(By.xpath("//*[@id='Login']")).click();
 		
+		// Clicking on forgot password button
+		driver.findElement(By.xpath("//*[@id=\'forgot_password_link\']"));
+		
+		// Getting the error message in case of invalid login
+		String loginErrorMessage = driver.
+								findElement(By.cssSelector("div#error.loginError")).
+								getText();
+		System.out.println(loginErrorMessage);
+		
 		driver.close();
 	}
 }

@@ -7,7 +7,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class LocatorFacebookExample {
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "/home/varunu28/Downloads/Softwares/chromedriver");
+		System.setProperty("webdriver.chrome.driver", 
+							"/home/varunu28/Downloads/Softwares/Selenium/chromedriver");
 		
 		WebDriver driver = new ChromeDriver();
 		
