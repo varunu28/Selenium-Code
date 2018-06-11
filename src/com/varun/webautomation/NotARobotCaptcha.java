@@ -1,4 +1,4 @@
-package com.varun.problems;
+package com.varun.webautomation;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
