@@ -2,3 +2,7 @@
 .project
 .settings/
 bin/
+*.iml
+.idea/*
+.idea
+.idea/uiDesigner.xml
